@@ -1,34 +1,38 @@
-class Book{
-    private String name;
-    private String author;
-    private int isbn;
-    private int kol;
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+class Book {
+   private String name;
+   private String author;
+   private int isbn;
+   private int kol;
 
+   public Book(String var1, String var2, int var3, int var4) {
+      this.name = var1;
+      this.author = var2;
+      this.isbn = var3;
+      this.kol = var4;
+   }
 
-public Book(String name,String author,int isbn,int kol){
-    this.name = name;
-    this.author = author;
-    this.isbn = isbn;
-    this.kol = kol;
-}
+   public String getName() {
+      return this.name;
+   }
 
-public String getName(){
-    return name;
+   public String getAuthor() {
+      return this.author;
+   }
 
-}
+   public int getIsbn() {
+      return this.isbn;
+   }
 
-public String getAuthor(){
-    return author;
+   public int getKol() {
+      return this.kol;
+   }
 
-}
-public int getIsbn(){
-    return isbn;
-}
-public int getKol(){
-    return kol;
-}
+   public void increaseKol(int var1) {
+      this.kol += var1;
+   }
 
-public void increaseKol(int n){kol += n;}
-public void decreaseKol(int n){kol -= n;}
-
+   public void decreaseKol(int var1) {
+      this.kol -= var1;
+   }
 }
